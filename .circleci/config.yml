@@ -12,22 +12,22 @@ jobs:
       - checkout
       - run:
           name: Front End Install
-          command: npm run front_end:install
+          command: npm run frontend:install
       - run:
           name: BackEnd Install
-          command: npm run back_end:install
+          command: npm run backend:install
       - run:
           name: FrontEnd Build
-          command: npm run front_end:build
+          command: npm run frontend:build
       - run:
           name: BackEnd Build
-          command: npm run back_end:build
+          command: npm run backend:build
           - run:
           name: FrontEnd deploy
-          command: npm run front_end:deploy
+          command: npm run frontend:deploy
       - run:
           name: BackEnd deploy
-          command: npm run back_end:deploy
+          command: npm run backend:deploy
 workFlows:
 Deploying_Frontend_Backend:
   jobs:

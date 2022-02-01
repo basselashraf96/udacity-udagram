@@ -2,8 +2,8 @@
     "scripts": {
         "frontend:install": "cd udagram-frontend && npm i",
         "backend:install": "cd udagram-api && npm i",
-        "frontend:build": "cd udagram-frontend && --openssl-legacy-provider npm run build  ",
-        "backend:build": "cd udagram-api && --openssl-legacy-provider npm run build   ",
+        "frontend:build": "cd udagram-frontend && npm run build  ",
+        "backend:build": "cd udagram-api && npm run build   ",
         "frontend:deploy": "cd udagram-frontend && deploy",
         "backend:deploy": "cd udagram-api && eb deploy"
     },

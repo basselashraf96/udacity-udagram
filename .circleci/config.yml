@@ -34,6 +34,7 @@ jobs:
           name: FrontEnd deploy
           command: |
             npm run frontend:deploy
+      - eb/install
       - run:
           name: BackEnd deploy
           command: |

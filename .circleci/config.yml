@@ -39,8 +39,3 @@ jobs:
           name: BackEnd deploy
           command: |
             npm run backend:deploy
-workFlows:
-Deploying_Frontend_Backend:
-  jobs:
-    - frontend
-    - backend

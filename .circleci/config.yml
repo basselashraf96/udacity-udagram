@@ -29,6 +29,7 @@ jobs:
           name: BackEnd Build
           command: |
             npm run backend:build
+      - aws-cli/install
       - run:
           name: FrontEnd deploy
           command: |

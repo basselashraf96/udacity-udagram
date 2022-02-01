@@ -15,22 +15,28 @@ jobs:
       - run: node --version
       - run:
           name: Front End Install
-          command: npm run frontend:install
+          command: |
+           npm run frontend:install
       - run:
           name: BackEnd Install
-          command: npm run backend:install
+          command: | 
+          npm run backend:install
       - run:
           name: FrontEnd Build
-          command: npm run frontend:build
+          command: | 
+          npm run frontend:build
       - run:
           name: BackEnd Build
-          command: npm run backend:build
+          command: | 
+          npm run backend:build
       - run:
           name: FrontEnd deploy
-          command: npm run frontend:deploy
+          command: | 
+          npm run frontend:deploy
       - run:
           name: BackEnd deploy
-          command: npm run backend:deploy
+          command: |
+          npm run backend:deploy
 workFlows:
 Deploying_Frontend_Backend:
   jobs:
